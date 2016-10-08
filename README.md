@@ -1,5 +1,5 @@
 # goMR
-A simple MapReduce implementation use golang.Only for learning, do not use in production.
+
 
 ## no talk, show the code(word counter)
 
