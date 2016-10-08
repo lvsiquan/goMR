@@ -35,7 +35,7 @@ func ender(kv goMR.KV) {
 
 func main() {
 	runtime.GOMAXPROCS(runtime.NumCPU())
-	gomr := goMR.New(40, 4)
+	gomr := goMR.New(40, 4)//First param is the number of mapper,second param is the number of reducer
 	gomr.DataFile("/home/dev/code/test.txt").Filter(filterFunc).Map(mapper)
 	gomr.Reduce(reducer)
 	gomr.End(ender)
